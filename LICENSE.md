@@ -1,5 +1,5 @@
 This is my programming work to implement a game process described in Moon Toad Publications' Spacecraft Design Guide SRD.
-The current version of this generator can be found at https://github.com/fectin/CepheusCraftDesign . 
+The current version of this generator can be found at https://github.com/fectin/MTPCraftDesign . 
 
 This script uses material from Moon Toad Publishing's Spacecraft Design Guide System Reference Document, Copyright © 2018 Michael Johnson. This site and its author are not affiliated with Michael Johnson or Moon Toad Publishing.
 
