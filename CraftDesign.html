@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="MTPCD.js"></script>
+
+<script>
+"use strict";
+
+var myCraft;
+
+function newCraft() {
+	window.myCraft = new MTPCD();
+	displayUpdate();
+}
+	
+function displayUpdate()	{
+	console.log("displayupdate");
+	document.getElementById("ShipUCP").innerHTML = myCraft.printOut();
+	document.getElementById("hull").style.visibility = "hidden";
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+</head>
+<div id="page-container">
+	<body onload="newCraft()">
+		<div id="content-wrap">
+			<h1 id = "headliner">Craft Design with the Cepheus Engine Core Rules</h1>
+			<div id="ShipUCP">
+				<h3 id="ShipName">The Burning Swan</h3>
+				<table>
+					<tr>
+						<th scope="row">CraftID:</th>
+						<td id="UCPCraftID">Test data<br>Test data<br>Test data<br></td>
+					</tr>
+					<tr>
+						<th scope="row">Hull:</th>
+						<td id="UCPHull"></td>
+					</tr>
+					<tr>
+						<th scope="row">Engineering:</th>
+						<td id="UCPPower"></td>
+					</tr>
+					<tr>
+						<th scope="row">Main:</th>
+						<td id="UCPLoco"></td>
+					</tr>
+						<th scope="row">Armament:</th>
+						<td id="UCPOff"></td>
+					</tr>
+					<tr>
+						<th scope="row">Cargo and Fuel:</th>
+						<td id="UCPDef"></td>
+					</tr>
+				</table>
+			</div>
+			<p id="belowtheline"><br><br><br><br><br><hr></p>
+
+
+			<div id="design">
+				<h3>Design choices</h3>
+				<!-- tech level -->
+					<div id="hull"> 
+						<h4>Type and Hull</h4>
+						<!-- Hull Totals -->
+						<!-- Craft (vehicle/small/space) -->
+						<!-- UCP, calculate others -->
+						<!-- Config and streamlining -->
+						<!-- Armor Type -->
+						<!-- Armor -->
+						<!-- Open top? -->
+						<!-- Cupola / Turrets -->
+					</div>
+				<div>
+			</div>
+		</div>
+		<div id="log">
+			<hr>
+			<p id="creationLog">nothing yet </p>
+		</div>
+	</body>
+</div>
+<footer id="footer">
+This site uses material from Moon Toad Publishing's Spacecraft Design Guide System Reference Document, Copyright © 2018 Michael Johnson. This site and its author are not affiliated with Michael Johnson or Moon Toad Publishing.<br>
+Cepheus Engine and Samardan Press are the trademarks of Jason "Flynn" Kemp. This site and its author are not affiliated with Jason "Flynn" Kemp or Samardan Press™.<br>
+Each product is derived from the Traveller System Reference Document and other Open Gaming Content made available by the Open Gaming License, and does not contain closed content from products published by either Mongoose Publishing or Far Future Enterprises. This Product is not affiliated with either Mongoose Publishing or Far Future Enterprises, and it makes no claim to or challenge to any trademarks held by either entity. The use of the Traveller System Reference Document does not convey the endorsement of this Product by either Mongoose Publishing or Far Future Enterprises as a product of either of their product lines.<br>
+A copy of the Open Gaming License is available <a href="OGL1.0a.txt">here</a>.
+</footer>
+</html>
